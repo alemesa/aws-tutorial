@@ -1,0 +1,30 @@
+@import "../global.scss";
+
+.Page {
+  color: black;
+  background-color: salmon;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  height: 100%;
+
+  .Sidebar {
+    height: 100%;
+  }
+
+  .content-container {
+    overflow-y: auto;
+    height: 100%;
+    padding: 5rem;
+    border: $global-border;
+  }
+
+  .Content {
+    font-size: 2rem;
+
+    img {
+      display: block;
+      width: auto;
+      height: 400px;
+    }
+  }
+}
