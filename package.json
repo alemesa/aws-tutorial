@@ -15,9 +15,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test  --passWithNoTests",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && aws s3 cp build/ s3://jarvisdashboard.com/ --recursive"
+    "deploy": "yarn build && aws s3 cp build/ s3://jarvisdashboard.com/ --recursive"
   },
   "eslintConfig": {
     "extends": "react-app"
