@@ -1,0 +1,23 @@
+@import "../global.scss";
+
+.Sidebar {
+  color: black;
+  background-color: lightsalmon;
+
+  > ul {
+    @include box(100%);
+    @include flex-column;
+    justify-content: space-around;
+
+    li {
+      @include flex-center;
+      border: $global-border;
+      padding: $global-padding;
+      height: 100%;
+
+      a {
+        text-align: center;
+      }
+    }
+  }
+}

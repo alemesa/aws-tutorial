@@ -1,0 +1,11 @@
+@import "../global.scss";
+
+.Header {
+  color: black;
+  background-color: lightblue;
+  z-index: 1;
+  @include flex-center;
+  padding: 0.5rem $global-padding;
+  height: $header-height;
+  border: $global-border;
+}
