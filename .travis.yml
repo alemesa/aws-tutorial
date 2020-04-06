@@ -5,7 +5,7 @@ cache:
   yarn: true
   directories:
     - node_modules
-scripts:
+script:
   - yarn test
 before_deploy:
   - yarn global add -g travis-ci-cloudfront-invalidation
